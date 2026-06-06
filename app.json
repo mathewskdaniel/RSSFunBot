@@ -1,0 +1,58 @@
+{
+    "name": "RSSFunBot",
+    "description": "Collect funny and interesting stuff from the web and deliver it to Telegram",
+    "repository": "https://github.com/mathewskdaniel/RSSFunBot",
+    "website": "https://github.com/mathewskdaniel/RSSFunBot",
+    "keywords": [
+        "python",
+        "RSS",
+        "Telegram",
+        "bot",
+        "Reddit",
+        "memes"
+    ],
+    "addons": [
+        "heroku-postgresql"
+    ],
+    "env": {
+        "TOKEN": {
+            "description": "Your bot token. Get it from @BotFather",
+            "required": true
+        },
+        "MANAGER": {
+            "description": "Your Telegram user ID. Get it from @userinfobot",
+            "required": true
+        },
+        "TELEGRAPH_TOKEN": {
+            "description": "Telegraph API access token. Get it from https://api.telegra.ph/createAccount?short_name=RSSFunBot&author_name=Generated%20by%20RSSFunBot&author_url=https%3A%2F%2Fgithub.com%2Fmathewskdaniel%2FRSSFunBot",
+            "required": false
+        },
+        "API_ID": {
+            "description": "Your Telegram API ID. Get it from https://my.telegram.org/apps",
+            "required": false
+        },
+        "API_HASH": {
+            "description": "Your Telegram API hash. Get it from https://my.telegram.org/apps",
+            "required": false
+        },
+        "USER_AGENT": {
+            "description": "User-Agent",
+            "required": false
+        },
+        "IPV6_PRIOR": {
+            "description": "Enforce fetching feeds over IPv6 firstly or not? (0/1)",
+            "value": "0",
+            "required": false
+        },
+        "MULTIUSER": {
+            "description": "Enable multi-user feature or not? (0/1)",
+            "value": "1",
+            "required": false
+        },
+        "DEBUG": {
+            "description": "Enable debug logging or not? (0/1)",
+            "value": "0",
+            "required": false
+        }
+    }
+}
